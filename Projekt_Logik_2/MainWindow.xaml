@@ -1,0 +1,69 @@
+﻿<Window x:Class="Projekt_Logik_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_Logik_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="788" Width="1103" MouseMove="Window_MouseMove">
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--<Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Stroke="Black" Width="80"/>-->
+        <!--<Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Stroke="Black" Width="80" Grid.Row="1"/>
+        <Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Stroke="Black" Width="80" Grid.Row="2"/>
+        <Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Stroke="Black" Width="80" Grid.Row="3"/>-->
+        <!--<StackPanel Orientation="Horizontal" Grid.ColumnSpan="6" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center">-->
+        <Ellipse HorizontalAlignment="Stretch" Height="80" Stroke="Black" Width="80" Grid.Row="5" Grid.Column="3" Fill="Red" MouseDown="SelectColor"/>
+        <Ellipse HorizontalAlignment="Stretch" Height="80" Stroke="Black" Width="80" Grid.Row="5" Grid.Column="4" Fill="Green" MouseDown="SelectColor"/>
+        <Ellipse HorizontalAlignment="Stretch" Height="80" Stroke="Black" Width="80" Grid.Row="5" Grid.Column="5" Fill="Blue" MouseDown="SelectColor"/>
+        <Ellipse HorizontalAlignment="Stretch" Height="80" Stroke="Black" Width="80" Grid.Row="5" Grid.Column="6" Fill="Yellow" MouseDown="SelectColor"/>
+        <Ellipse HorizontalAlignment="Stretch" Height="80" Stroke="Black" Width="80" Grid.Row="5" Grid.Column="7" Fill="Black" MouseDown="SelectColor"/>
+        <Ellipse HorizontalAlignment="Stretch" Height="80" Stroke="Black" Width="80" Grid.Row="5" Grid.Column="8" Fill="White" MouseDown="SelectColor"/>
+        <!--</StackPanel>-->
+        <!--<Grid Grid.Row="4">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Stroke="Black" Width="40"/>
+            <Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Stroke="Black" Width="40" Grid.Row="1"/>
+            <Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Stroke="Black" Width="40" Grid.Column="1"/>
+            <Ellipse HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Stroke="Black" Width="40" Grid.Column="1" Grid.Row="1"/>
+        </Grid>-->
+        <!--<ListView Grid.Column="9" Grid.Row="3" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>-->
+        <Canvas Name="OverlayCanvas" IsHitTestVisible="False" Panel.ZIndex="10000">
+            <Ellipse Name="CursorColorIndicator" Width="20" Height="20" Stroke="Black" Visibility="Collapsed" />
+        </Canvas>
+    </Grid>
+</Window>
