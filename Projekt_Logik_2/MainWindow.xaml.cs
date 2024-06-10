@@ -31,7 +31,7 @@ namespace Projekt_Logik_2
             InitializeColors();
             CreateSecretCode();
             PripravPole();
-            this.Background = Brushes.SandyBrown;
+
         }
         public void InitializeColors()
         {
@@ -80,8 +80,7 @@ namespace Projekt_Logik_2
             e.SetValue(Grid.RowProperty, row);
             e.SetValue(Grid.ColumnProperty, column);
             MainGrid.Children.Add(e);
-            //Random random = new Random();
-            //e.Fill = colors[random.Next(colors.Count)];
+
         }
 
         public void AddEvaluationPins()
