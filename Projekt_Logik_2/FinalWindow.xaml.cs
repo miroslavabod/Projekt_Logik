@@ -22,7 +22,7 @@ namespace Projekt_Logik_2
         public FinalWindow(bool win = false)
         {
             InitializeComponent();
-            ResultMessage.Text = win ? "Bitch u win >:(" : "Nigga u lost >:DDD";
+            ResultMessage.Text = win ? "U win :)" : "U lost :(";
             Application.Current.Shutdown();
             Show();
         }
