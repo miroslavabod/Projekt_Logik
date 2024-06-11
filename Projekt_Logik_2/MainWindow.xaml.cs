@@ -127,8 +127,7 @@ namespace Projekt_Logik_2
 
         private void Check(object sender, RoutedEventArgs e)
         {
-
-            int[] pins = new int[4];
+int[] pins = new int[4];
             for (int i = 0; i < 4; i++)
             {
                 Ellipse pin = (Ellipse)MainGrid.Children.Cast<UIElement>().First(x => Grid.GetRow(x) == i && Grid.GetColumn(x) == round && x is not Canvas);
@@ -140,26 +139,16 @@ namespace Projekt_Logik_2
                 }
             }
 
-            int[] evaluation = EvaluatePins(pins);
 
             if (pins.SequenceEqual(secretCode))
-            {
-                FinalWindow f = new FinalWindow(true);
-                f.Show();
-                Close();
-            }
-            else
-            {
-                if (round == 12)
-                {
-                    FinalWindow f = new FinalWindow();
-                    f.Show();
-                    Close();
-                }
-                else
-                    MessageBox.Show($"You lost! ({String.Join(',', secretCode)})");
-            }
-            AddEvaluationPins();
+                new FinalWindow(true);
+            else if (round == 11)
+                new FinalWindow();
+            //else
+            //    MessageBox.Show($"Wrong combination! ({String.Join(',', secretCode)})");
+
+            int[] evaluation = EvaluatePins(pins);
+            AddEvaluationPins(evaluation);
             checkButton.SetValue(Grid.ColumnProperty, ++round);
 
         }
