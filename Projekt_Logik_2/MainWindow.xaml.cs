@@ -22,7 +22,7 @@ namespace Projekt_Logik_2
     {
         int[] secretCode;
         List<Brush> colors;
-        Brush selectedColor = Brushes.Transparent;
+        Brush selectedColor = Brushes.Gray;
         int round = 0;
         Button checkButton;
         public MainWindow()
@@ -74,7 +74,7 @@ namespace Projekt_Logik_2
                 Height = 80,
                 Width = 80,
                 Stroke = Brushes.Black,
-                Fill = Brushes.Transparent,
+                Fill = Brushes.Gray,
             };
             e.MouseDown += FillColor;
             e.SetValue(Grid.RowProperty, row);
@@ -85,7 +85,7 @@ namespace Projekt_Logik_2
 
         public void AddEvaluationPins()
         {
-            //Need two rows and columns
+             //Need two rows and columns
             Grid g = new Grid();
             g.RowDefinitions.Add(new RowDefinition());
             g.RowDefinitions.Add(new RowDefinition());
@@ -98,12 +98,12 @@ namespace Projekt_Logik_2
                     Height = 40,
                     Width = 40,
                     Stroke = Brushes.Black,
-                    //Fill this according to the evaluation
-                    Fill = Brushes.Transparent,
+               
                 };
+                e.Fill = pins[i] == 2 ? Brushes.Black : pins[i] == 1 ? Brushes.Red : Brushes.Gray;
                 e.MouseDown += SelectColor;
-                e.SetValue(Grid.RowProperty, i % 2);
-                e.SetValue(Grid.ColumnProperty, i / 2);
+                e.SetValue(Grid.RowProperty, i / 2);
+                e.SetValue(Grid.ColumnProperty, i % 2);
                 g.Children.Add(e);
             }
             g.SetValue(Grid.RowProperty, 4);
