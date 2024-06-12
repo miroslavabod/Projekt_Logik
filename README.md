@@ -10,7 +10,7 @@
 
 ## Popis tříd a metod
 ### Třída MainWindow
-1. Metoda **MainWindow()** je inicializační metoda. Inicializuje komponenty, nastaví barvy, vygeneruje tajný kód, připraví herní pole a nastaví barvu pozadí.
+1. Metoda **MainWindow()** je inicializační metoda. Inicializuje komponenty, nastaví barvy, vygeneruje tajný kód, připraví herní pole.
 2. Metoda **InitializeColors()** je metoda ktéra má v sobě seznam dostupných barev, které mohou být použity ve hře.
 3. Metoda **CreateSecretCode()** vygeneruje tajný kód, který musí uživatel uhodnout.
 4. Metoda **PripravPole()** vytvoří mřížku pro hru a přidá tlačítko "Check" pro ověřování kombinací.
