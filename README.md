@@ -17,7 +17,7 @@
 5. Metoda **AddColorPin()** přidá obarevné kolíčky do mřížky.
 6. Metoda **AddEvaluationPins()** obarvi kolíčky pro zpětnou vazbu (černé a červené kolíčky) do mřížky.
 7. Metoda **SelectColor()** nastaví vybranou barvu na základě kliknutí na barvu.
-8. Metoda **FillColor()** vyplní kolíček vybranou barvou, pokud je ve správném sloupciyplní kolíček vybranou barvou, pokud je ve správném sloupci.  
+8. Metoda **FillColor()** vyplní kolíček vybranou barvou, pokud je ve správném sloupci.  
 9. Metoda **Check()** ověří kombinaci, kterou hráč zadal, a přidá zpětnou vazbu (černé a červené kolíčky). Pokud hráč vyhrál nebo prohrál, zobrazí příslušné okno.
 10. Metoda **EvaluatePins()** vyhodnotí kombinaci, kterou hráč zadal, a vrátí pole obsahující černé a červené kolíčky jako zpětnou vazbu.
 11. Metoda **Window_MouseMove()** přesune ukazatel barvy podle pohybu myši nad herní mřížkou.
