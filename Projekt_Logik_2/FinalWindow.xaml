@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="FinalWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="ResultMessage" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50">Bitch u win</TextBlock>
+        <TextBlock x:Name="ResultMessage" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50">U win :)</TextBlock>
     </Grid>
 </Window>
